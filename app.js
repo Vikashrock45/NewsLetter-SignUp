@@ -2,7 +2,7 @@ const express = require("express")
 const bodyParser = require("body-parser");
 const request = require("request");
 const mailchimp = require("@mailchimp/mailchimp_marketing")
-require('dotenv').config()
+// require('dotenv').config()
 const app = express()
 const https = require("https")
 
@@ -12,7 +12,7 @@ app.use(express.urlencoded({extended: true}))
 
 //Setting up MailChimp
 mailchimp.setConfig({
- apiKey: `${process.env.API_KEY}`,
+ apiKey: `f7c494359b01e14d63f24c6c6caf7727-us14`,
   server: "us14"
 })
 
@@ -45,7 +45,7 @@ app.post("/", function (req, res) {
   
   const options = {
     method: "POST",
-    auth: `rock:${process.env.API_KEY}` 
+    auth: `rock:f7c494359b01e14d63f24c6c6caf7727-us14` 
   }
   
   const request = https.request(url, options, function(response) {
