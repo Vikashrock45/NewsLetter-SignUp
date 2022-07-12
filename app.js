@@ -33,11 +33,11 @@ app.post("/", function(req, res){
 
 	const jsonData = JSON.stringify(data);
 
-	const url = "https://us20.api.mailchimp.com/3.0/lists/d2455a919a";
+	const url = "https://us20.api.mailchimp.com/3.0/lists/a0e51f2031";
 
 	const options = {
 		method: "POST",
-		auth: "vik1:7da2abd04abee3b5e1930ab2db7ed782-us20"
+		auth: "b091909a70e1e7e5744cb00073a891eb-us14"
 	}
 
 	const request = https.request(url, options, function(response){
@@ -61,8 +61,8 @@ app.post("/", function(req, res){
 
 })
 
-// Api Id - 7da2abd04abee3b5e1930ab2db7ed782-us20
-// Aud Id - d2455a919a
+// Api Id - b091909a70e1e7e5744cb00073a891eb-us14
+// Aud Id - a0e51f2031
 
 
 
